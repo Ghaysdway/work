@@ -1,0 +1,34 @@
+   0 # Создать папку animals в /home
+   1 mkdir -p /home/animals
+   2 # Создать подпапки dogs, cats, fish в animals
+   3 mkdir -p /home/animals/dogs /home/animals/cats /home/animals/fish
+   4 # Добавить файлы pluto, nemo и garfield в соответствующие папки
+   5 touch /home/animals/dogs/pluto
+   6 touch /home/animals/cats/garfield
+   7 touch /home/animals/fish/nemo
+   8 # В /tmp создать файл adam
+   9 touch /tmp/adam
+  10 # Копировать adam в /home/humans (создать директорию)
+  11 mkdir -p /home/humans
+  12 cp /tmp/adam /home/humans/
+  13 # Создать файл evA в /tmp
+  14 touch /tmp/evA
+  15 # Переместить с переименованием evA в /opt/eve
+  16 mv /tmp/evA /opt/eve
+  17 # Переместить eve в humans (/home/humans)
+  18 mv /opt/eve /home/humans/
+  19 # Проверить, что adam и eve находятся в папке humans
+  20 mkdir -p /home/animals
+  21 mkdir -p /home/animals/dogs /home/animals/cats /home/animals/fisch
+  22 touch /home/animals/dogs/pluto
+  23 touch /home/animals/cats/garfield
+  24 touch /home/animals/fisch/nemo
+  25 touch /tmp/adam
+  26 mkdir -p /home/humans
+  27 cp /tmp/adam /home/humans/
+  28 touch /tmp/evA
+  29 mv /tmp/eva /opt/eve
+  30 mv /tmp/evA /opt/eve
+  31 mv /opt/eve /home/humans/
+  32 ls /home/humans
+  33 history > /tmp/history.txt && export_file /tmp/history.txt

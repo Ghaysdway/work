@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>  
+    <link rel="stylesheet" href="./style.css"> 
+    <h3 id="title">hello world</h3>
+    <h3 id="title"> hello tarmeez</h3>  
+    <h3 id="title"> tarmeez channel</h3>                                    
+</head>
+<body>
+ 
+</body>
+<script src="./script.js"></script>
+<script>
+    let elm1=  document.getElementById('title')
+    let etm2 =  document.getElementsByClassName('title')
+    console.log(elm1);
+    console.log(elm2);
+    // document.getElementById('title').innerHTML = 'welcome to tarmeez chanel'; вариант  1 один елемент
+
+    // document.getElementsByClassName('title')[2].innerHTML = 'welcome' Вариант 2  много елемент как массив
+    
+    
+    for (element of document.getElementsByClassName('h3'))    визывает как таг
+{
+    element.innerHtml = 'hi'
+}
+</script>
+</html>
